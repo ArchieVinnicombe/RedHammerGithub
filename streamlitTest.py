@@ -13,6 +13,8 @@ with st.form(key="file_info_form"):
     
     submit_button = st.form_submit_button(label="Submit Form")
 
-#if submit_button:
-
+if submit_button:
+    print(f"Supplier Invoice Number: {invNum}")
+    print(f"Job Reference Number: {jobRef}")
+    print(f"Date of Invoice: {date}")
     
