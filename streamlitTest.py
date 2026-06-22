@@ -1,5 +1,5 @@
 import streamlit as st
 
-st.sidebar.header("Navigation")
+st.form(key="my_form_key")
 
 
