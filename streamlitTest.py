@@ -14,8 +14,11 @@ with st.form(key="file_info_form"):
     submit_button = st.form_submit_button(label="Submit Form")
 
 if submit_button:
+    #format date variable
+    date = date[2:].replace('-', '')
+
     st.write("Form submitted successfully!")
     st.write(f"Supplier Invoice Number: {invNum}")
     st.write(f"Job Reference Number: {jobRef}")
-    st.write(f"Date of Invoice: {date}")
+    st.write(f"Date of Invoice: {date} ")
     
