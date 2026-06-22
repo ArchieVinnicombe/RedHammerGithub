@@ -7,12 +7,12 @@ st.write("Please fill out the information below.")
 with st.form(key="file_info_form"):
     
     #Add input widgets inside the form
-    name = st.text_input("Full Name")
-    age = st.number_input("Age", min_value=18, max_value=100, value=25)
-    role = st.selectbox("Job Role", ["Developer", "Data Scientist", "Manager", "Other"])
+    invNum = st.text_input("Supplier Invoice Number")
+    jobRef = st.text_input("Job Reference Number")
+    date = st.date_input("Date of Invoice")
     
     submit_button = st.form_submit_button(label="Submit Form")
 
-#Handle the action outside or after the form block
-##if submit_button:
+#if submit_button:
+
     
